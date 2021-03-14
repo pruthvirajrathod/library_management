@@ -16,7 +16,7 @@ class Book < ApplicationRecord
 
   def author_book_count
   	self.author.book_count = self.author.book_count.nil? ? 1 : self.author.book_count += 1
-	self.author.save
+	  self.author.save
   end
   
 end
